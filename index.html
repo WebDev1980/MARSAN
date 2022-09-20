@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- *************  GOOGLE FONTS SOURCE API  ************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/icons/key_favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles-dist.css">
+    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+
+    <title>MARSAN - Llaves con CHIP</title>
+</head>
+
+<body>
+    <!-- *****************  MAIN MARSAN LOGO  ***************** -->
+    <div id="box" class="icon-wrapper">
+        <img class="marsan-icon" src="assets/images/MARSAN-black_noBG.svg" alt="logo-MARSAN">
+    </div>
+    
+    <header>
+        <!-- ****************************************************** -->
+        <!-- *******************  MAIN TOPBAR  ******************** -->
+        <!-- ****************************************************** -->
+        <div class="fixed-topbar-wrapper">
+            <!-- ***************  BODY TOP BIKER ICON  **************** -->
+            <div class="logo-biker-wrapper">
+                <a href=".">
+                <img class="top-biker-icon" src="assets/images/BIKER-MG_.svg" alt="Icono" title="Cerrajería MARSAN">
+                </a>
+            </div>
+            <!-- IMPORTANT NOTE !!! -->
+        <!-- *********  RIGHT SINTAX MODEL FOR TAG LABELS  ******** -->  
+        <!-- <input type="checkbox" id="switch-input">
+        <label for="switch-input">
+            <span id="" class="">Text<img class="" src="/" alt=""></span>
+        </label> -->
+        <!-- ****************************************************** -->
+
+        <input type="checkbox" id="switch-topmenu-input" onclick="deSelect()">
+        <label for="switch-topmenu-input" class="switch-topmenu-input">
+        <div class="top-wrapper">
+            <span class="top-title"><span class="hide-text">Galería de </span><span>Imágenes</span></span>
+            <span><img class="top-icon" src="assets/icons/images.svg" alt="Icono"></span>
+        </div>
+        </label>
+        <!-- ****************************************************** -->
+        <!-- **************  IMAGE GALLERY SECTION  *************** -->
+        <!-- ****************************************************** -->
+        <div class="gallery-content-wrapper">
+            <div class="splide" aria-labelledby="carousel-heading1">
+                <div class="arrows-wrapper">
+                    <!-- Next and previous buttons --> 
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div> 
+                <h2 id="carousel-heading1" class="carousel-heading">Galería de Imágenes</h2>
+                
+                <div class="slideshow-container"> 
+                    <!-- Full-width images with number and caption text --> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">1 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide1.svg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Text</div>  -->
+                    </div> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">2 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide2.jpg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Two</div>  -->
+                    </div> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">3 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide2a.jpeg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Three</div>  -->
+                    </div> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">4 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide3.jpg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Text</div>  -->
+                    </div> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">5 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide4.jpg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Two</div>  -->
+                    </div> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">6 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide5.jpg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Three</div>  -->
+                    </div>
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">7 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide6.jpg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Text</div>  -->
+                    </div> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">8 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide7.jpg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Two</div>  -->
+                    </div> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">9 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide8.png" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Three</div>  -->
+                    </div>
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">10 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide9.jpg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Three</div>  -->
+                    </div>
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">11 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide10.jpg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Text</div>  -->
+                    </div> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">12 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide12.svg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Two</div>  -->
+                    </div> 
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">13 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide13.jpeg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Two</div>  -->
+                    </div>
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">14 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide14.jpeg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Two</div>  -->
+                    </div>
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">15 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide14.svg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Two</div>  -->
+                    </div>
+                    <div class="mySlides fade"> 
+                        <div class="numbertext">16 / 16</div> 
+                        <img class="slide-content" src="assets/images/slide15.jpg" alt="Imagen de MARSAN"> 
+                        <!-- <div class="text">Caption Two</div>  -->
+                    </div>    
+                    <!-- Next and previous buttons --> 
+                    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>  -->
+                </div>  
+                <br> 
+                <!-- The dots/circles --> 
+                <div style="text-align:center"> 
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(7)"></span> 
+                    <span class="dot" onclick="currentSlide(8)"></span> 
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span> 
+                    <span class="dot" onclick="currentSlide(11)"></span> 
+                    <span class="dot" onclick="currentSlide(12)"></span>
+                    <span class="dot" onclick="currentSlide(13)"></span>  
+                    <span class="dot" onclick="currentSlide(14)"></span> 
+                    <span class="dot" onclick="currentSlide(15)"></span>
+                    <span class="dot" onclick="currentSlide(16)"></span>       
+                </div>
+            </div>
+        </div>
+        <!-- ****************************************************** -->
+        <!-- **************  VIDEO GALLERY SECTION  *************** -->
+        <!-- ****************************************************** -->        
+        <input type="checkbox" id="switch-topmenu-input_" onclick="deSelect_()">
+        <label for="switch-topmenu-input_" class="switch-topmenu-input_">
+            <div class="top-wrapper_">
+                <span class="top-title"><span class="hide-text">Galería de </span><span>Videos</span></span>
+                <span><img class="top-icon" src="assets/icons/photo-video.svg" alt="Icono"></span>
+            </div>
+        </label>
+
+        <div class="video-gallery-wrapper">       
+            <div class="splide" aria-labelledby="carousel-heading2">
+                <div class="arrows-wrapper">
+                    <!-- Next and previous buttons --> 
+                    <a class="prev" onclick="plusSlides_(-1)">&#10094;</a> 
+                    <a class="next" onclick="plusSlides_(1)">&#10095;</a>
+                </div>
+                <h2 id="carousel-heading2" class="carousel-heading">Galería de Videos</h2>
+                <div class="slideshow-container"> 
+                    <!-- Full-width images with number and caption text --> 
+                    <div class="mySlides_ fade_"> 
+                        <div class="numbertext">1 / 6</div> 
+                        <video class="slide-content" src="assets/videos/MARSAN1.mp4" controls></video>
+                    </div> 
+                    <div class="mySlides_ fade_"> 
+                        <div class="numbertext">2 / 6</div> 
+                        <video class="slide-content" src="assets/videos/MARSAN2.mp4" controls></video>
+                    </div> 
+                    <div class="mySlides_ fade_"> 
+                        <div class="numbertext">3 / 6</div> 
+                        <video class="slide-content" src="assets/videos/MARSAN3.mp4" controls></video>
+                    </div> 
+                    <div class="mySlides_ fade_"> 
+                        <div class="numbertext">4 / 6</div> 
+                        <video class="slide-content" src="assets/videos/MARSAN4.mp4" controls></video>
+                    </div> 
+                    <div class="mySlides_ fade_"> 
+                        <div class="numbertext">5 / 6</div> 
+                        <video class="slide-content" src="assets/videos/MARSAN5.mp4" controls></video>
+                    </div> 
+                    <div class="mySlides_ fade_"> 
+                        <div class="numbertext">6 / 6</div> 
+                        <video class="slide-content" src="assets/videos/MARSAN6.mp4" controls></video>
+                    </div> 
+                    <!-- Next and previous buttons --> 
+                    <!-- <a class="prev" onclick="plusSlides_(-1)">&#10094;</a> 
+                    <a class="next" onclick="plusSlides_(1)">&#10095;</a>  -->
+                </div>  
+                <br> 
+                <!-- The dots/circles --> 
+                <div style="text-align:center"> 
+                    <span class="dot_" onclick="currentVideoSlide(1)"></span> 
+                    <span class="dot_" onclick="currentVideoSlide(2)"></span> 
+                    <span class="dot_" onclick="currentVideoSlide(3)"></span>
+                    <span class="dot_" onclick="currentVideoSlide(4)"></span>
+                    <span class="dot_" onclick="currentVideoSlide(5)"></span>
+                    <span class="dot_" onclick="currentVideoSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ****************************************************** -->
+        <!-- ****************  SOCIAL NET SECTION  **************** -->
+        <!-- ****************************************************** -->
+        <label for="switch-topmenu-input__">
+            <div class="top-wrapper__">
+                <span class="top-title top-title-">Síguenos en</span>
+                <span><a href="https://tinyurl.com/MARSAN-Face" target="blank">   
+                    <img class="face-icon" src="assets/icons/facebook.svg" alt="Icono">
+                </a></span>
+                <span><a href="https://tinyurl.com/MARSAN-Insta" target="blank">
+                    <img class="insta-icon" src="assets/icons/instagram.svg" alt="Icono">
+                </a></span>
+                <span><a href="https://tinyurl.com/MARSAN-Tiktok" target="blank">
+                    <img class="tik-icon" src="assets/icons/tiktok.svg" alt="Icono">
+                </a></span>
+                <span><a href="https://tinyurl.com/MARSAN-Youtube" target="blank">
+                    <img class="ytube-icon" src="assets/icons/youtube.svg" alt="Icono">
+                </a></span>
+                <span><a href="https://linktr.ee/Cerrajeria_MarSan" target="blank">
+                    <img class="link3-icon" src="assets/icons/linktree.svg" alt="Icono">
+                </a></span>
+            </div>
+        </label>
+        <input type="checkbox" id="switch-topmenu-input__">
+
+        </div> 
+    </header>
+    <!-- ****************************************************** -->
+    <!-- ****************  LEFT MENU SECTION  ***************** -->
+    <!-- ****************************************************** -->
+    <div class="left-menu-wrapper">
+        <!-- ******************  VISIBLE SECTION  ***************** -->
+        <div id="change1" class="block-wrapper">
+            <label class="label-input" for="switch-menu-input">
+                <div class="logo-leyend-wrapper" title="click para ver">
+                    <span class="span-image"><img class="logo-icon marsan" src="assets/images/MARSAN-black_noBG.svg" alt="Biker MG"><span class="block-leyend block-leyend-">¿Quiénes somos?</span></span>
+                    
+                </div>
+            </label>
+        </div>               
+        <input type="checkbox" id="switch-menu-input">
+        <!-- ******************  HIDDEN SECTION  ****************** -->
+        <div class="block-wrapper-hidden">
+            <div class="block-leyend-wrapper">
+                <h2 class="block-leyend block-leyend--">¿Quiénes somos?</h2>
+            </div>
+            <div class="block-leyend-wrapper block-leyend-wrapper-">
+                <p class="middle-leyend middle-leyend---">Somos un grupo de cerrajeros con amplia experiencia en la ciudad de Irapuato, Guanajuato. En constante capacitación, profesionalización y convencidos de que la óptima manera de acercarse y ganarse la confianza de un cliente sólo puede ser a través de la mejora continua y el bien hacer de este noble oficio.</p>
+            </div>
+            <div class="block-leyend-wrapper block-leyend-wrapper-- blw-mobile">
+                <img class="biker-image" src="assets/images/BIKER-MG_.svg" alt="Imagen gif">
+            </div>
+        </div>
+        <!-- ******************  VISIBLE SECTION  ***************** -->
+        <div id="change2" class="block-wrapper">
+            <label class="label-input" for="switch-menu-input_">
+                <div class="logo-leyend-wrapper" title="click para ver" onClick='setTimeout(handleChangePosition, 400)'>
+                    <span class="span-image"><img class="servicios-image" src="assets/images/SERVICIOS.svg" alt="Logo MARSAN"><span class="block-leyend block-leyend-">Nuestros Servicios</span></span>
+                    
+                </div>
+            </label>
+        </div>               
+        <input type="checkbox" id="switch-menu-input_">
+        <!-- ******************  HIDDEN SECTION  ****************** -->
+        <div class="block-wrapper-hidden_">
+            <div class="block-leyend-wrapper">
+                <h2 class="block-leyend block-leyend--">Nuestros Servicios</h2>
+            </div>
+            <div class="block-leyend-wrapper block-leyend-wrapper- blw-mod">
+                <div class="block-leyend-wrapper-li-">
+                    <h3 class="middle-title">APERTURAS</h3>
+                    <ul class="li">
+                        <li class="list">Chapas</li>
+                        <li class="list">Candados</li>
+                        <li class="list">Automóviles</li>
+                    </ul>
+                </div>
+                <div class="block-leyend-wrapper-li--">
+                    <h3 class="middle-title">VEHÍCULOS</h3>
+                    <ul class="li">
+                        <li class="list">Llaves para autos</li>
+                        <li class="list">Programación de chips</li>
+                        <li class="list">Reparación de controles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block-leyend-wrapper block-leyend-wrapper-- blw-mobile">
+                <img class="servicios-image- inner-img" src="assets/gif/cerrajero.gif" alt="Imagen gif">
+            </div>
+        </div>
+        <!-- ******************  VISIBLE SECTION  ***************** -->
+        <div id="change3" class="block-wrapper">
+            <label class="label-input" for="switch-menu-input__">
+                <div class="logo-leyend-wrapper" title="click para ver">
+                    <span class="span-image"><img class="logo-icon wapp" src="assets/icons/contacto_.svg" alt="Logo Whatsapp"><span class="block-leyend block-leyend- block-leyend-mod"><span class="hide-logo-leyend2">Contacto</span><span class="hide-logo-leyend1">Contáctenos</span></span></span>
+                    
+                </div>
+            </label>
+        </div>               
+        <input type="checkbox" id="switch-menu-input__">
+        <!-- ******************  HIDDEN SECTION  ****************** -->
+        <div class="block-wrapper-hidden__">   
+            <div class="block-leyend-wrapper">
+                <h2 class="block-leyend block-leyend--"><span class="hide-logo-leyend2">Contacto</span><span class="hide-logo-leyend1">Contáctenos</h2>
+            </div>
+            <div class="block-leyend-wrapper- block-leyend-wrapper-mod">
+             
+                <div class="block-leyend-wrapper-mod___">
+                    <div class="inner-icon-wrapper">
+                        <img class="contact-icon1" src="assets/icons/whatsapp.svg" alt="icono de Whatsapp">
+                    </div>
+                    <p class="middle-leyend">462.146.43.21</p>
+                    <!-- <p class="middle-leyend">462.124.69.76</p> -->
+                </div>
+                <div class="block-leyend-wrapper-mod___">
+                    <div class="inner-icon-wrapper">
+                        <img class="contact-icon2" src="assets/icons/user.svg" alt="Icono de usuario">
+                    </div>
+                    <p class="middle-leyend">Sandro Jr.</p>
+                    <p class="middle-leyend">Marín Sánchez</p>
+                </div>
+                <div class="block-leyend-wrapper-mod____">
+                    <p class="middle-leyend middle-leyend- middle-leyend-- ">Servicio Express 24/7</p>
+                    <p class="middle-leyend middle-leyend-">Incluidos días festivos</p>
+                </div>
+        
+            </div>
+            <div class="block-leyend-wrapper block-leyend-wrapper-- blw-mobile">
+                <img class="contact-image inner-img" src="assets/gif/contact2.gif" alt="Imagen gif">
+            </div>       
+        </div>
+    </div>
+    <!-- ****************************************************** -->
+    <!-- ***************  MAIN CONTENT SECTION  *************** -->
+    <!-- ****************************************************** -->
+    <main class="main-wrapper">
+                <!-- ***************  MAIN VISIBLE CONTENT  *************** -->
+        <div class="content-wrapper">
+            <div class="content-wrapper_">
+                <img id="target" src="assets/images/MARSAN-llaves-con-CHIP.svg" alt="MARSAN logo" class="content-img">
+            </div>
+        </div>
+    </main>
+
+    <!-- <footer>
+
+        <div class="low-img"></div>
+
+    </footer> -->
+
+
+    <script src="js/deselect-checbox.js"></script>
+    <script src="js/carousel-2.js"></script>
+    <script src="js/carousel-1.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
