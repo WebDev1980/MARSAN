@@ -737,7 +737,7 @@ iframe {
     transition: scale 600ms ease;
 }
 .contact-image {
-    width: 10.5em;
+    width: 10em;
     -webkit-transition: scale 600ms ease;
     -o-transition: scale 600ms ease;
     transition: scale 600ms ease;
